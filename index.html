@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>講座筆記</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+  :root {
+    --ink: #1a1610;
+    --paper: #f7f3ec;
+    --accent: #8b2e10;
+    --rule: #c8b99a;
+    --muted: #6b5e4e;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Noto Serif TC', serif;
+    font-size: 17px;
+    line-height: 1.95;
+    padding: 60px 20px 100px;
+  }
+
+  .wrap { max-width: 740px; margin: 0 auto; }
+
+  .site-header {
+    border-top: 3px solid var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding: 40px 0 32px;
+    margin-bottom: 56px;
+    text-align: center;
+  }
+
+  .site-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    letter-spacing: 0.28em;
+    color: var(--accent);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .site-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 28px 0;
+    border-bottom: 1px solid var(--rule);
+    transition: background 0.15s;
+  }
+
+  .card:first-child { border-top: 1px solid var(--rule); }
+
+  .card:hover { background: rgba(139,46,16,0.04); padding-left: 12px; }
+
+  .card-label {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  .card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.4;
+  }
+
+  .card-arrow {
+    float: right;
+    color: var(--rule);
+    font-size: 1.2rem;
+    margin-top: 2px;
+  }
+
+  footer {
+    margin-top: 64px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--rule);
+    letter-spacing: 0.1em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="site-header">
+    <div class="site-label">Lecture Notes</div>
+    <div class="site-title">講座筆記</div>
+  </div>
+
+  <div class="card-list">
+
+    <a class="card" href="猶太教.html">
+      <span class="card-arrow">›</span>
+      <div class="card-label">猶太教概論</div>
+      <div class="card-title">猶太教：一神教的起源與猶太人的歷史</div>
+    </a>
+
+    <a class="card" href="黃庭堅.html">
+      <span class="card-arrow">›</span>
+      <div class="card-label">文明之旅：公元1105年——蔡氏兄弟與黃庭堅的生命終章</div>
+      <div class="card-title">黃庭堅與蔡氏兄弟：北宋兄弟情義的對照</div>
+    </a>
+
+    <a class="card" href="中國壓力鍋.html">
+      <span class="card-arrow">›</span>
+      <div class="card-label">中國無差別攻擊事件頻發的深層根源分析</div>
+      <div class="card-title">中國無差別攻擊事件頻發的深層原因分析</div>
+    </a>
+
+  </div>
+
+  <footer>© 2026 講座筆記</footer>
+
+</div>
+</body>
+</html>
